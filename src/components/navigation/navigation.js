@@ -1,20 +1,12 @@
 import React from "react";
-import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Modal from "react-bootstrap/Modal";
 import logo from "../../assets/imgs/freetogame-logo.png";
-import Form from "react-bootstrap/Form";
 import "./navigation.css";
 
 const Navigation = () => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
   return (
     <Navbar variant="dark" bg="dark" expand="lg">
       <Container>
@@ -25,19 +17,6 @@ const Navigation = () => {
             alt="Logo Free To Game"
           />
         </Navbar.Brand>
-        <i className="bi bi-search text-white px-2" onClick={handleShow}></i>
-        <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Find games</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <Form>
-              <Form.Group className="mb-3">
-                <Form.Control type="text" placeholder="Search for games" />
-              </Form.Group>
-            </Form>
-          </Modal.Body>
-        </Modal>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
