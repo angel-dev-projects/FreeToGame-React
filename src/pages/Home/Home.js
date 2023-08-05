@@ -42,7 +42,7 @@ const Home = () => {
   return (
     <div className="deep-grey-background full-screen-content">
       <Button className="overlay m-2" variant="light" onClick={handleShow}>
-        <i class="bi bi-funnel"></i>
+        <i className="bi bi-funnel"></i>
       </Button>
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
