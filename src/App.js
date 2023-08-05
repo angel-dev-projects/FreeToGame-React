@@ -1,15 +1,20 @@
 import "./App.css";
-import Navigation from "./components/navigation/navigation";
-import Footer from "./components/footer/footer";
-import Home from "./components/home/home";
+import { BrowserRouter, Routes , Route } from "react-router-dom";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Home from "./pages/Home/Home";
+import Default from "./pages/Default/Default";
 
 function App() {
   return (
-    <div>
-      <Navigation></Navigation>
-      <Home></Home>
+    <BrowserRouter>
+      <Header></Header>
+      <Routes>
+        <Route exact path="/" element={<Home/>} />
+        <Route path="*" element={<Default/>} />
+      </Routes>
       <Footer></Footer>
-    </div>
+    </BrowserRouter>
   );
 }
 
