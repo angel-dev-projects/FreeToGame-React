@@ -8,10 +8,10 @@ import GameDetail from "./pages/GameDetail/GameDetail";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/freetogame-react">
       <Header></Header>
       <Routes>
-        <Route exact path="/" element={<Home/>} />
+        <Route path="/" element={<Home/>} />
         <Route path="/game/:id" element={<GameDetail/>} />
         <Route path="*" element={<Default/>} />
       </Routes>
