@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/freetogame-react/static/css/main.54b7756b.css",
+    "main.js": "/freetogame-react/static/js/main.7c2f01e9.js",
+    "static/media/bootstrap-icons.woff?": "/freetogame-react/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/freetogame-react/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
+    "index.html": "/freetogame-react/index.html",
+    "main.54b7756b.css.map": "/freetogame-react/static/css/main.54b7756b.css.map",
+    "main.7c2f01e9.js.map": "/freetogame-react/static/js/main.7c2f01e9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54b7756b.css",
+    "static/js/main.7c2f01e9.js"
+  ]
+}
