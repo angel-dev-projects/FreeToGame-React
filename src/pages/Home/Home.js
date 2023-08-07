@@ -5,6 +5,7 @@ import Spinner from "../../components/Spinner/Spinner";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Filter from "../../components/Filter/Filter";
+import { Link } from 'react-router-dom';
 import "./Home.css";
 
 const Home = () => {
@@ -81,9 +82,9 @@ const Home = () => {
                   {game.short_description}
                 </p>
                 <div className="card-text d-flex justify-content-between">
-                  <a href={"/game/" + game.id} className="text-white">
+                  <Link to={"/game/" + game.id} className="text-white">
                     View game
-                  </a>
+                  </Link>
                   <div className="d-flex text-end justify-content-end">
                     <div className="rounded bg-secondary px-1 mx-2">
                       {game.genre}
